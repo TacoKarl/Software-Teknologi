@@ -1,0 +1,26 @@
+CXX = g++
+EX=output
+SOURCES=main.cpp part1.cpp part2.cpp
+OBJECT=${SOURCES:.cpp=.o}
+LIBRARY=part2.a
+
+all: ${EX}
+
+${EX}: ${OBJECT}
+	${CXX} -o $@ $^
+
+%.o: %.cpp
+	${CXX} -c -o $@ $^
+
+
+$(LIBRARY): $(OBJECTS)
+	ar rcs $@ $(OBJECTS)
+
+clean:
+	rm *.o ${EX}
+
+help:
+	@echo "Available targets:"
+	@echo " all		: Build the executable file (default target)"
+	@echo " clean		: Remove all object files and the executable"
+	@echo " help		: Display this help message"

@@ -1,0 +1,13 @@
+CXX=arm-rpizw-g++
+SOURCES=main.cpp hello.cpp
+OBJECTS={SOURCES:.cpp=.o}
+EX=rpioutput
+
+${EX}: ${OBJECTS}
+	${CXX} -o $@ $^
+
+%.o: %.cpp
+	${CXX} -c -o $@ $^
+
+clean:
+	rm *.o output
