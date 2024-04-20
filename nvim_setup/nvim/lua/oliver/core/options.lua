@@ -1,3 +1,4 @@
+vim.cmd("let g:netrw_liststyle = 3")
 local opt = vim.opt -- for conciseness
 
 -- line numbers 
@@ -21,7 +22,7 @@ opt.smartcase = true
 opt.cursorline = true
 
 -- appearance
-opt.termguicolors = false
+opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
