@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="MauiCalc.app/MauiCalc">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>MauiCalc.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>MauiCalc.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/oliver/Library/CloudStorage/OneDrive-Aarhusuniversitet/4_sem/FED/week2/MauiCalc/MauiCalc/obj/Debug/net8.0-ios/iossimulator-arm64/mtouch-symbols.list</SymbolFile>
+      <DSymName>MauiCalc.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/oliver/Library/CloudStorage/OneDrive-Aarhusuniversitet/4_sem/FED/week2/MauiCalc/MauiCalc</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

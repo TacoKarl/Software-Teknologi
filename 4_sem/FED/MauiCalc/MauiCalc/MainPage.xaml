@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCalc.MainPage">
+    <Grid ColumnDefinitions="*,*,*,*"
+          RowDefinitions="*,*,*,*,*"
+          RowSpacing="2" 
+          ColumnSpacing="2">
+        
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="4"
+               BackgroundColor="{StaticResource LcdBackgroundColor}"
+               
+               FontFamily="LCD"
+               FontSize="72"
+               Padding="20"
+               TextColor="Black"
+               HorizontalTextAlignment="End"
+               VerticalTextAlignment="End"
+               
+               x:Name="LCD"/>
+        
+        <!--Row 1-->
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            CornerRadius="0"
+            Text="7"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            CornerRadius="0"
+            Text="8"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            CornerRadius="0"
+            Text="9"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        
+        <!--Row 2-->
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            CornerRadius="0"
+            Text="4"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            CornerRadius="0"
+            Text="5"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            CornerRadius="0"
+            Text="6"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        
+        <!--Row 3-->
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            CornerRadius="0"
+            Text="1"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            CornerRadius="0"
+            Text="2"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            CornerRadius="0"
+            Text="3"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        
+        <!--Row 4-->
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            CornerRadius="0"
+            Text="."
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            CornerRadius="0"
+            Text="0"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            CornerRadius="0"
+            Text="="
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        
+        <!--Column 3 (operators)-->
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            CornerRadius="0"
+            Text="+"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            CornerRadius="0"
+            Text="-"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            CornerRadius="0"
+            Text="*"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            CornerRadius="0"
+            Text="/"
+            FontSize="72"
+            FontFamily="LCD"
+            Clicked="Button_Clicked"/>
+        
+    </Grid>
+    
+</ContentPage>
